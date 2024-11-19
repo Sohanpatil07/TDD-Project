@@ -1,5 +1,6 @@
 package com.Calculator.service;
 
+import com.Calculator.exception.NegativeNumberException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
