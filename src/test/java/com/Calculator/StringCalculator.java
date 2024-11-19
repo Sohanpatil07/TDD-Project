@@ -20,5 +20,15 @@ public class StringCalculator {
         assertEquals(0, calculatorService.add(""));
     }
 
+    @Test
+    void testAddWithOneNumber() throws NegativeNumberException {
+        assertEquals(5, calculatorService.add("5"));
+    }
+
+    @Test
+    void testAddWithTwoNumbers() throws NegativeNumberException {
+        assertEquals(15, calculatorService.add("5,10"));
+    }
+
 
 }
